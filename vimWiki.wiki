@@ -1,8 +1,0 @@
-= Header 1 =
-== Header 2 ==
-=== Header 3 ===
-
-*bold* -- bold text
-_ italic _ == italic text
-
-press enter on top of word to create link

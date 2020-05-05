@@ -1,4 +1,0 @@
-= My VimWiki Notes =
-
-== Vim related Notes ==
-[[vimWiki]]
