@@ -1,4 +1,5 @@
 # my VimWiki Notes
 
-# Vim related
-[vimwiki](vimrelated/vimwiki.md)
+## Vim related
+[VimWiki](vimrelated/vimwiki.md)
+[Markdown](vimrelated/Markdown.md)
