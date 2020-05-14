@@ -13,4 +13,4 @@
 * [GoLand](ide/GoLand.md)
 
 ## Programming Languages
-* [G](programingLanguages/Go.md)
+* [Go](programingLanguages/Go.md)

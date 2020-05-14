@@ -1,5 +1,5 @@
 # Go (Golang)
-[golang.org](https://golang.org)
+Go can be downloaded from [golang.org](https://golang.org)
 
 This language is like imagine C and Python were merged together.
 * Strong and statically typed
@@ -12,6 +12,8 @@ This language is like imagine C and Python were merged together.
 Some notes:
 * Go does not have exceptions, they instead have panic.
 * Go does not need semi colons
+* Go does not suppoer prefix version of increment and decrement `++i or --i`
+	* We also cannot put them inside expression `array[i++]` is not allowed
 * To format, run `go fmt`
 
 This summary is based on [A Tour of Go](https://tour.golang.org/list).
@@ -229,12 +231,14 @@ default:
 }
 ```
 Switch cases are evaluated from top to bottom, stopping when a case succeds.
+There can be multiple conditions for one case.
+
 In the example below `complicatedFunction` is never ran.
 ```go
 switch i := 0; i {
 case 0:
 	fmt.Println("zero")
-case complicatedFunction():
+case complicatedFunction(), 10:
 	fmt.Println("long function ran")
 }
 ```
@@ -444,6 +448,15 @@ for _, value := range sliceA {
 	fmt.printf("element %d is %d", index, value)
 }
 ```
+
+We can also iterate over a map:
+```go
+for key, value := range mapA {
+	fmt.Println(key, value)
+}
+```
+However, each iteration will produce different resutls.
+Go runtime goes the extra mile to randomize them.
 
 ### More on Functions
 Functions are values too.
@@ -758,3 +771,24 @@ for {
 	}
 }
 ```
+
+To make the main goroutine wait for all its children.
+Remember that Go passes by value, so pass in a pointer to update the same WaitGroup.
+```go
+import "sync"
+
+func main() {
+	var wg sync.WaitGroup
+		// make threads do things
+		// Each thread notify that need to wait for 1 more
+		// Think of it as a counter
+		wg.Add(1)
+
+		// When each of the thread is finished do, easily done by defer
+		wg.Done()
+
+	// wait until all tasks are done
+	wg.Wait() // Blocks until everything is finished
+}
+```
+
