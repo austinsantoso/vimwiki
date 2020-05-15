@@ -203,7 +203,7 @@ for sum < 100 {
 	sum += sum
 }
 ```
-We can also omit the loop condition to make an infinite loop.
+We can also omit the loop condition to [make](make) an infinite loop.
 
 ### If
 `if-else` statements are like `for` loops;
@@ -792,3 +792,13 @@ func main() {
 }
 ```
 
+### Mutex
+```go
+var mux sync.Mutex
+
+// to lock
+mux.Lock()
+
+// to unlock
+mux.Unlock()
+```
