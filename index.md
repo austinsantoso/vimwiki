@@ -1,5 +1,8 @@
 # my VimWiki Notes
 
+## Personal Notes
+* [Personal notes for Interviews](personal/personal_notes.md)
+
 ## Vim related
 * [vimrc](vimrelated/vimrc.md)
 * [VimWiki](vimrelated/vimwiki.md)
@@ -14,3 +17,4 @@
 
 ## Programming Languages
 * [Go](programingLanguages/Go.md)
+* [MySQL](programmingLanguages/MySQL.md)
