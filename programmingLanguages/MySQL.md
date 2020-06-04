@@ -1,8 +1,19 @@
 # Basic MySQL Syntax
 
 # Listing all tables from database
+To show the databases available
+```sql
+SHOW DATABASES
+```
+
+To show the tables present in a database
 ```sql
 SHOW TABLES FROM <database>
+```
+
+To describe a table, show the column properties
+```sql
+DESCRIBE <database>.<table>
 ```
 
 # Inserting Data into a Table
