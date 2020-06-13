@@ -20,3 +20,26 @@ To active:
 cd venv
 source bin/activate
 ```
+
+The good way to use virtual env
+```
+# Create project folder
+mkdir myproject && cd myproject
+
+# create venv
+pyvenv venv
+
+# ignore venv
+echo 'venv' > .gitignore
+
+# activate venv
+source venv/bin/activate
+
+pip install XYZABC
+
+# write dependencies to file
+pip freeze > requirements.txt
+
+# to install dependencies in file
+pip install -r requirements.txt
+```
