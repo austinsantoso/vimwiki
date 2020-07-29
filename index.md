@@ -2,6 +2,7 @@
 
 ## Personal Notes
 * [Personal notes for Interviews](personal/personal_notes.md)
+* [Setting up WSL](personal/setupWSL.md)
 
 ## Vim related
 * [vimrc](vimrelated/vimrc.md)
