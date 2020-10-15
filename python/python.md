@@ -12,6 +12,8 @@ Rather than storing all libaries in a global folder, we store them locally based
 To create a virtualenv:
 ```
 virtualenv venv
+# or
+python3 -m venv venv
 ```
 This is create a folder venv where the virtual environment will be.
 

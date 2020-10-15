@@ -17,5 +17,5 @@
 * [GoLand](ide/GoLand.md)
 
 ## Programming Languages
-* [Go](programingLanguages/Go.md)
+* [Go](programmingLanguages/Go.md)
 * [MySQL](programmingLanguages/MySQL.md)
