@@ -14,6 +14,9 @@ To create a virtualenv:
 virtualenv venv
 # or
 python3 -m venv venv
+# or if we want to specify a specific version to use
+virtualenv -p `which python2.6` <path/to/new/virtualenv>
+virtualenv -p `which python3` venv
 ```
 This is create a folder venv where the virtual environment will be.
 
