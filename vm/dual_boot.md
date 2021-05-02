@@ -1,0 +1,2 @@
+- [install ubuntu](https://www.zachpfeffer.com/single-post/install-ubuntu-on-an-external-hard-drive)
+- [bootable disk](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview)

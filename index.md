@@ -22,4 +22,5 @@
 
 ## Virtual Machine
 * [VM](./vm/vm.md)
+* [dual booting](./vm/dual_boot.md)
 
